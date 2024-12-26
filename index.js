@@ -20,10 +20,8 @@ window.addEventListener("resize", (event) => {
 
 document.addEventListener("DOMContentLoaded", () => {
 	const logo = document.querySelector(".logo");
-	const text = logo.textContent; // Get the original text content
-	logo.textContent = ""; // Clear the original content
-
-	// Wrap each letter in a <span> and append it back
+	const text = logo.textContent; 
+	logo.textContent = "";
 	text.split("").forEach((letter, index) => {
 		const span = document.createElement("span");
 		span.textContent = letter;
@@ -31,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		span.style.display = "inline-block";
 		span.style.transform = "translateX(100px)";
 		span.style.animation = `letterFadeIn 1s ease forwards`;
-		span.style.animationDelay = `${index * 0.1}s`; // Staggered delay
+		span.style.animationDelay = `${index * 0.1}s`;
 		logo.appendChild(span);
 	});
 });
@@ -60,7 +58,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 	const menuItemLiist = document.querySelectorAll(".menu-item");
 	menuItemLiist.forEach((item, index) => {
-		const delay = index * 0.1; // Delay in seconds (e.g., 0.3s per item)
+		const delay = index * 0.1;
 
 		if (index % 2 === 0) {
 			item.style.animation = `fadeInLeft 1s ease ${delay}s forwards`;

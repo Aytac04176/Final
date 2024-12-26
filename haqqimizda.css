@@ -10,7 +10,7 @@
 }
 .hero {
 	height: 700px;
-	background-image: url("images/foodiesfeed.com_healthy-foods.jpg");
+	background-image: url("./images/foodiesfeed.com_healthy-foods.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
